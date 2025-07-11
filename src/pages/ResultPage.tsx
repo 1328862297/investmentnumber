@@ -27,10 +27,7 @@ import {
   ArrowRight,
   BookOpen,
   PiggyBank,
-  Linkedin,
-  DollarSign,
-  Clock,
-  Award
+  Linkedin
 } from 'lucide-react';
 
 ChartJS.register(
@@ -139,7 +136,7 @@ const ResultPage: React.FC = () => {
         borderColor: 'rgba(99, 102, 241, 0.5)',
         borderWidth: 1,
         callbacks: {
-          label: function(context: any) {
+          label: function(context: {parsed: {y: number}}) {
             return `Portfolio Value: ${formatCurrency(context.parsed.y)}`;
           }
         }
@@ -178,7 +175,7 @@ const ResultPage: React.FC = () => {
         },
         ticks: {
           color: '#6B7280',
-          callback: function(value: any) {
+          callback: function(value: number) {
             return formatCurrency(value);
           }
         }

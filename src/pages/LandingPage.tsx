@@ -1,28 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { 
   Calculator, 
-  Target, 
   GraduationCap, 
   Share2, 
-  TrendingUp, 
   ArrowRight, 
   Play,
   CheckCircle,
   Star,
   ChevronDown,
-  Users,
-  Award,
-  Zap,
   DollarSign,
-  PiggyBank,
-  BookOpen
+  BookOpen,
+  Menu,
+  X
 } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   const [showStickyBar, setShowStickyBar] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,21 +41,153 @@ const LandingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700">
       {/* Header */}
-      <header className="px-4 py-6 sm:px-6 lg:px-8 relative z-10">
+      <header className="px-4 py-6 sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white bg-opacity-20 rounded-xl flex items-center justify-center backdrop-blur-sm">
               <Calculator className="w-6 h-6 text-white" />
             </div>
             <span className="text-xl font-bold text-white">Investment Number Calculator</span>
-          </div>
+          </Link>
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            <div className="relative group">
+              <button className="flex items-center text-white hover:text-indigo-200 transition-colors">
+                <BookOpen className="w-4 h-4 mr-1" />
+                Learning Guides
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+                <div className="p-4 space-y-2">
+                  <Link to="/guide/compound-interest-calculator" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    📈 Compound Interest Guide
+                  </Link>
+                  <Link to="/guide/investment-basics" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    💡 Investment Basics
+                  </Link>
+                  <Link to="/guide/retirement-planning" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    🎯 Retirement Planning
+                  </Link>
+                  <Link to="/guide/emergency-fund" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    🛡️ Emergency Fund Guide
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative group">
+              <button className="flex items-center text-white hover:text-indigo-200 transition-colors">
+                <GraduationCap className="w-4 h-4 mr-1" />
+                Dave Ramsey
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+                <div className="p-4 space-y-2">
+                  <Link to="/dave-ramsey/baby-steps" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    👶 Dave's 7 Baby Steps
+                  </Link>
+                  <Link to="/dave-ramsey/12-percent-rule" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
+                    📊 The 12% Rule Explained
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          {/* Desktop CTA */}
           <button 
             onClick={handleStartCalculation}
-            className="hidden sm:inline-flex items-center px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
+            className="hidden lg:inline-flex items-center px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
             Find My Number
           </button>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden p-2 text-white hover:text-indigo-200 transition-colors"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl rounded-b-2xl z-30"
+          >
+            <div className="p-6 space-y-4">
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-3">📚 Learning Guides</h3>
+                <div className="space-y-2 ml-4">
+                  <Link 
+                    to="/guide/compound-interest-calculator" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    📈 Compound Interest Guide
+                  </Link>
+                  <Link 
+                    to="/guide/investment-basics" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    💡 Investment Basics
+                  </Link>
+                  <Link 
+                    to="/guide/retirement-planning" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🎯 Retirement Planning
+                  </Link>
+                  <Link 
+                    to="/guide/emergency-fund" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    🛡️ Emergency Fund Guide
+                  </Link>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-3">👨‍🏫 Dave Ramsey</h3>
+                <div className="space-y-2 ml-4">
+                  <Link 
+                    to="/dave-ramsey/baby-steps" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    👶 Dave's 7 Baby Steps
+                  </Link>
+                  <Link 
+                    to="/dave-ramsey/12-percent-rule" 
+                    className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    📊 The 12% Rule Explained
+                  </Link>
+                </div>
+              </div>
+
+              <button 
+                onClick={() => {
+                  handleStartCalculation();
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl hover:from-indigo-600 hover:to-purple-700 transition-all duration-200 shadow-lg"
+              >
+                <Calculator className="w-5 h-5 mr-2" />
+                Calculate My Number
+              </button>
+            </div>
+          </motion.div>
+        )}
       </header>
 
       {/* Hero Section */}

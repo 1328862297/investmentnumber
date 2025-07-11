@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ArrowLeft, DollarSign, TrendingUp, Calculator, BarChart3 } from 'lucide-react';
 import { Line } from 'react-chartjs-2';
 import {
@@ -90,7 +90,7 @@ const CalculatorPage: React.FC<CalculatorPageProps> = ({ onCalculationComplete, 
         borderColor: 'rgba(59, 130, 246, 0.5)',
         borderWidth: 1,
         callbacks: {
-          label: function(context: any) {
+          label: function(context: {parsed: {y: number}}) {
             return `Wealth: $${context.parsed.y.toLocaleString()}`;
           }
         }
@@ -129,7 +129,7 @@ const CalculatorPage: React.FC<CalculatorPageProps> = ({ onCalculationComplete, 
         },
         ticks: {
           color: '#6B7280',
-          callback: function(value: any) {
+          callback: function(value: number) {
             return '$' + value.toLocaleString();
           }
         }

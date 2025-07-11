@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Calculator, ArrowLeft, DollarSign, Target, TrendingUp, ArrowRight, BookOpen, PiggyBank, Users, Award, Lightbulb, Shield } from 'lucide-react';
+import { Calculator, ArrowLeft, DollarSign, Target, TrendingUp, ArrowRight, BookOpen, PiggyBank, Users, Award, Shield } from 'lucide-react';
 
 const ToolPage: React.FC = () => {
   const navigate = useNavigate();
