@@ -12,12 +12,15 @@ import {
   AlertTriangle,
   BarChart3
 } from 'lucide-react';
+import SEO from '../../components/SEO';
+import { seoConfig } from '../../config/seoConfig';
 
 const EmergencyFund: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <SEO data={seoConfig.emergencyFund} />
       {/* Header */}
       <header className="px-4 py-6 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto flex items-center justify-between">

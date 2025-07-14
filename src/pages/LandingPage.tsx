@@ -15,6 +15,8 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import SEO from '../components/SEO';
+import { seoConfig } from '../config/seoConfig';
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -38,8 +40,28 @@ const LandingPage: React.FC = () => {
     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Investment Number Calculator",
+    "description": "Calculate your investment number using Dave Ramsey's proven wealth-building principles",
+    "url": "https://investmentnumber.net",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "author": {
+      "@type": "Organization",
+      "name": "Investment Number Calculator"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700">
+      <SEO data={seoConfig.home} structuredData={homeStructuredData} />
       {/* Header */}
       <header className="px-4 py-6 sm:px-6 lg:px-8 relative z-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
