@@ -51,16 +51,16 @@ const CompoundInterestGuide: React.FC = () => {
           >
             <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              Complete Compound Interest Guide
+              Compound Interest Calculator Guide
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              The Complete Compound Interest Guide
+              Compound Interest Calculator Guide
               <span className="block text-2xl sm:text-3xl text-indigo-600 mt-2">
-                Master the Secret to Wealth Building
+                How Investment Calculators Use Compound Interest
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Learn how compound interest became known as the "eighth wonder of the world" and discover how to use a compound interest calculator to plan your financial goals and build long-term wealth.
+              Ever wonder how investment calculators actually work? It's all about compound interest. Learn why our <strong>Dave Ramsey investment calculator</strong> uses these principles to show you exactly how much your money will grow over time.
             </p>
           </motion.div>
 
@@ -72,10 +72,10 @@ const CompoundInterestGuide: React.FC = () => {
             className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 border border-gray-100 mb-12"
           >
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">What is a Compound Interest Calculator?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">How Does an Investment Calculator Actually Work?</h2>
               
               <p>
-                A <strong>compound interest calculator</strong> is a powerful financial tool that helps you calculate the future value of your investments under the compound interest effect. Unlike simple interest, compound interest calculates interest not only on the principal amount but also on the accumulated interest, creating a "snowball effect" of wealth growth.
+                Simple question: how does an <strong>investment calculator</strong> predict your future wealth? It's all compound interest math. Your money earns returns, then those returns earn returns, and it just keeps snowballing. That's why our <strong>Dave Ramsey investment calculator</strong> can show you becoming a millionaire from monthly investments that seem way too small.
               </p>
 
               <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-200 my-8">

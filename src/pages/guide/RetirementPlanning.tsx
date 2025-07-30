@@ -54,16 +54,16 @@ const RetirementPlanning: React.FC = () => {
           >
             <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              Retirement Planning Guide
+              Retirement Investment Calculator Guide
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Plan Your Perfect Retirement
+              Retirement Investment Calculator
               <span className="block text-2xl sm:text-3xl text-indigo-600 mt-2">
-                Build Financial Freedom That Lasts
+                How Much Do I Need to Invest Monthly?
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Retirement planning doesn't have to be overwhelming. This guide shows you exactly how to calculate what you need and create a strategy that works for your timeline and goals.
+              Want to retire with enough money? Use our <strong>retirement investment calculator</strong> to find your exact monthly investment amount. We'll show you how Dave Ramsey's method makes retirement planning actually simple.
             </p>
           </motion.div>
 

@@ -52,16 +52,16 @@ const InvestmentBasics: React.FC = () => {
           >
             <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              Complete Investment Basics Guide
+              Beginner Investment Calculator Guide
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Investment Basics for Beginners
+              Investment Calculator for Beginners
               <span className="block text-2xl sm:text-3xl text-indigo-600 mt-2">
-                Your Journey to Financial Growth
+                Learn Before You Calculate Your Numbers
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Investing isn't mysterious! From basic concepts to practical steps, this complete guide will help you build the right investment mindset and start your wealth-building journey.
+              Never invested before? Perfect. Learn the basics here, then use our <strong>investment calculator</strong> to find your monthly number. We'll show you exactly what Dave Ramsey means when he talks about building wealth through consistent investing.
             </p>
           </motion.div>
 

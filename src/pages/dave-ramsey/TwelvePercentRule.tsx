@@ -49,16 +49,16 @@ const TwelvePercentRule: React.FC = () => {
           >
             <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              Dave Ramsey's Investment Philosophy
+              Dave Ramsey Investment Calculator Method
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              The 12% Rule Explained
+              Dave Ramsey 12% Investment Rule
               <span className="block text-2xl sm:text-3xl text-indigo-600 mt-2">
-                Why Dave Expects 12% Annual Returns
+                Why Our Investment Calculator Uses 12% Returns
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Dave Ramsey consistently talks about earning 12% annual returns on investments. Critics call it unrealistic, but the numbers tell a different story. Here's why this assumption makes sense for long-term investors.
+              Ever use a <strong>Dave Ramsey investment calculator</strong> and wonder why it defaults to 12% returns? Critics say it's too optimistic, but here's the actual data. This number isn't random - it's based on decades of stock market history.
             </p>
           </motion.div>
 
@@ -70,10 +70,10 @@ const TwelvePercentRule: React.FC = () => {
             className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 border border-gray-100 mb-12"
           >
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Where the 12% Number Comes From</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">The Math Behind Dave Ramsey's Investment Calculator</h2>
               
               <p>
-                Dave Ramsey's 12% assumption isn't pulled from thin air. It's based on the historical average annual return of the S&P 500 stock index from 1926 to today. While individual years vary wildly, the long-term average has consistently hovered around 10-12%.
+                Look, Dave didn't just pick 12% out of a hat. When you use our <strong>Dave Ramsey investment calculator</strong>, that 12% default comes from nearly 100 years of stock market data. The S&P 500 has averaged about 10-12% annually since 1926. Some years tank, some years soar, but over decades? The math works out.
               </p>
 
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200 my-8">
@@ -82,18 +82,18 @@ const TwelvePercentRule: React.FC = () => {
                     <BarChart3 className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Historical Market Performance</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Why 12% Makes Sense for Calculators</h3>
                     <p className="text-gray-700">
-                      From 1926-2023, the S&P 500 has averaged approximately 10.5% annually. When you factor in dividend reinvestment and growth stock mutual funds (Dave's preference), 12% becomes reasonable for planning purposes.
+                      The S&P 500 averaged 10.5% from 1926-2023. But Dave focuses on growth stock mutual funds, which typically beat the market. Factor in dividend reinvestment, and 12% becomes a solid planning number for any <strong>investing calculator</strong>.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Understanding Market Volatility</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Critics Don't Get Dave's Investment Calculator Logic</h2>
 
               <p>
-                Here's what critics miss: Dave isn't saying you'll earn exactly 12% every year. Some years you'll lose 20%, others you'll gain 30%. The 12% is a long-term average over decades of investing, not a year-by-year prediction.
+                Here's where people miss the point. Dave isn't promising you'll make exactly 12% every single year. That's not how markets work. Some years you'll lose your shirt, other years you'll double your money. The 12% in our <strong>investment calculator</strong> is the long-term average after decades of riding out all the crazy ups and downs.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">

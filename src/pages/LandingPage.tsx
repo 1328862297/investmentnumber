@@ -69,7 +69,7 @@ const LandingPage: React.FC = () => {
             <div className="w-10 h-10 bg-white bg-opacity-20 rounded-xl flex items-center justify-center backdrop-blur-sm">
               <Calculator className="w-6 h-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-white">Investment Number Calculator</span>
+            <span className="text-xl font-bold text-white">Dave Ramsey Investment Calculator</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -83,16 +83,16 @@ const LandingPage: React.FC = () => {
               <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
                 <div className="p-4 space-y-2">
                   <Link to="/guide/compound-interest-calculator" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    📈 Compound Interest Guide
+                    📈 Compound Interest Calculator Guide
                   </Link>
                   <Link to="/guide/investment-basics" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    💡 Investment Basics
+                    💡 Beginner Investment Calculator
                   </Link>
                   <Link to="/guide/retirement-planning" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    🎯 Retirement Planning
+                    🎯 Retirement Investment Calculator
                   </Link>
                   <Link to="/guide/emergency-fund" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    🛡️ Emergency Fund Guide
+                    🛡️ Emergency Fund Calculator
                   </Link>
                 </div>
               </div>
@@ -101,16 +101,16 @@ const LandingPage: React.FC = () => {
             <div className="relative group">
               <button className="flex items-center text-white hover:text-indigo-200 transition-colors">
                 <GraduationCap className="w-4 h-4 mr-1" />
-                Dave Ramsey
+                Dave Ramsey Method
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
                 <div className="p-4 space-y-2">
                   <Link to="/dave-ramsey/baby-steps" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    👶 Dave's 7 Baby Steps
+                    👶 Dave Ramsey Baby Steps
                   </Link>
                   <Link to="/dave-ramsey/12-percent-rule" className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg transition-colors">
-                    📊 The 12% Rule Explained
+                    📊 Dave Ramsey 12% Investment Rule
                   </Link>
                 </div>
               </div>
@@ -122,7 +122,7 @@ const LandingPage: React.FC = () => {
             onClick={handleStartCalculation}
             className="hidden lg:inline-flex items-center px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
-            Find My Number
+            Calculate My Investment
           </button>
 
           {/* Mobile menu button */}
@@ -151,28 +151,28 @@ const LandingPage: React.FC = () => {
                     className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    📈 Compound Interest Guide
+                    📈 Compound Interest Calculator Guide
                   </Link>
                   <Link 
                     to="/guide/investment-basics" 
                     className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    💡 Investment Basics
+                    💡 Beginner Investment Calculator
                   </Link>
                   <Link 
                     to="/guide/retirement-planning" 
                     className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    🎯 Retirement Planning
+                    🎯 Retirement Investment Calculator
                   </Link>
                   <Link 
                     to="/guide/emergency-fund" 
                     className="block text-sm text-gray-600 hover:text-indigo-600 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    🛡️ Emergency Fund Guide
+                    🛡️ Emergency Fund Calculator
                   </Link>
                 </div>
               </div>
@@ -223,18 +223,18 @@ const LandingPage: React.FC = () => {
             >
               <div className="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 text-white rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
                 <DollarSign className="w-4 h-4 mr-2" />
-                Investment Number Calculator
+                Dave Ramsey Investment Calculator
               </div>
               
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                Find Your
+                How Much Should I
                 <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  Investment Number
+                  Invest Monthly?
                 </span>
               </h1>
               
               <p className="text-2xl text-indigo-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-                Calculate exactly how much to invest each month using Dave Ramsey's proven compound interest principles.
+                Want to know your exact monthly investment amount? This Dave Ramsey investment calculator gives you the answer in 30 seconds using proven wealth building principles.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
@@ -243,13 +243,13 @@ const LandingPage: React.FC = () => {
                   className="inline-flex items-center px-8 py-4 bg-white text-indigo-600 font-bold text-lg rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-xl"
                 >
                   <Play className="w-6 h-6 mr-3" />
-                  Calculate My Investment Number
+                  Start the Investment Calculator
                 </button>
                 <button 
                   onClick={scrollToFeatures}
                   className="inline-flex items-center text-white hover:text-indigo-200 transition-colors"
                 >
-                  <span className="mr-2">Learn More</span>
+                  <span className="mr-2">See How Investment Calculator Works</span>
                   <ChevronDown className="w-5 h-5" />
                 </button>
               </div>
@@ -306,88 +306,88 @@ const LandingPage: React.FC = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Discover Your Personal Investment Number
+              What's Your Monthly Investment Number?
             </h2>
             
             <div className="text-gray-700 leading-relaxed space-y-6">
               <p>
-                Your <strong>investment number</strong> is the most important figure in your financial life – it's the exact monthly amount you need to invest to reach any money goal. Unlike vague advice to "save more," our <strong>investment number calculator</strong> gives you a precise target based on your specific situation and timeline.
+                Ever wonder exactly how much you should invest each month? Your <strong>investment calculator</strong> number is way more important than your salary, your age, or even how much you have saved right now. It's the one number that tells you whether you're on track or falling behind.
               </p>
 
               <p>
-                Dave Ramsey has taught millions of Americans that wealth building isn't about luck or high income – it's about knowing your numbers and sticking to a plan. When you use our <strong>dave ramsey investment calculator</strong>, you're applying the same compound interest math that has helped ordinary people become millionaires through consistent monthly investing.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Why Your Investment Number Changes Everything
-              </h3>
-
-              <p>
-                Most people fail at building wealth because they don't have a clear target. They might save $200 one month, $50 the next, then skip a few months entirely. But when you know your investment number – whether it's $300, $500, or $1,200 per month – you have a concrete goal that removes all guesswork from your financial future.
-              </p>
-
-              <p>
-                Consider Sarah, a 28-year-old nurse who wanted to retire with $800,000 by age 60. Using our <strong>dave ramsey investment and retirement calculator</strong>, she discovered her investment number was $623 per month. That seemed impossible at first, but breaking it down helped: $623 is about $21 per day, or roughly what many people spend on lunch and coffee. By making small lifestyle adjustments, Sarah found her number and is now on track for financial independence.
+                Dave Ramsey figured this out years ago. Regular people don't get rich from big windfalls or lucky breaks. They get rich by knowing their number and hitting it every single month. That's why our <strong>Dave Ramsey investment calculator</strong> doesn't just give you some generic advice about saving 10%. It shows you the exact amount YOU need to invest based on YOUR goals.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                The Science Behind Compound Interest Growth
+                Why Most People Never Build Real Wealth
               </h3>
 
               <p>
-                Our <strong>dave ramsey college investment calculator</strong> uses the same mathematical principles that Einstein reportedly called "the eighth wonder of the world." Compound interest means your money earns returns, and then those returns earn returns, creating exponential growth over time. This is why starting early makes such a dramatic difference in your final results.
+                Here's the thing about investing that nobody talks about. Most people just throw random amounts at their 401k each month. Maybe $200 this month, $75 next month, then they skip a few months because life happened. No wonder they never get anywhere.
               </p>
 
               <p>
-                Here's a real example: if you invest $500 monthly for 30 years at 12% annual returns (Dave's recommended rate based on historical S&P 500 performance), you'll contribute $180,000 of your own money but end up with over $1.4 million. That extra $1.2 million comes entirely from compound interest – money your money earned while you slept, worked, and lived your life.
+                But when you use an <strong>investing calculator</strong> to find your actual number, everything changes. Take Sarah. She's 28, works as a nurse, wants $800,000 by age 60. Sounds impossible right? Our calculator showed her she needs $623 monthly. Still sounds crazy until you realize that's $21 a day. That's literally what most people blow on coffee and lunch. Sarah found that money, automated the investment, and now she's building serious wealth while her coworkers are still "trying to save more."
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Learning from Dave Ramsey's Market Wisdom
+                Why Dave Ramsey's 12% Rule Actually Works
               </h3>
 
               <p>
-                <strong>Dave ramsey's latest</strong> teachings emphasize staying focused on proven strategies rather than chasing market trends. Recent events like the <strong>dave ramsey ftx</strong> discussions highlight why his approach works – while cryptocurrency speculators lost fortunes, people following Dave's mutual fund strategy continued building wealth steadily through market volatility.
+                You know what's wild about compound interest? Einstein supposedly called it the eighth wonder of the world, but most people still don't get it. Here's the simple version: your money makes money, then that money makes money, and it just keeps snowballing.
               </p>
 
               <p>
-                The beauty of having your investment number is that it keeps you disciplined during both market highs and lows. When markets crash, you keep investing your monthly amount, buying more shares at lower prices. When markets soar, you resist the temptation to reduce contributions because "you're already ahead." This systematic approach has proven successful through decades of market cycles.
+                Check this out. Let's say you invest $500 monthly for 30 years using Dave Ramsey's 12% return assumption. You'll put in $180,000 of your own cash, but you'll end up with over $1.4 million. Where'd that extra $1.2 million come from? That's compound interest doing the heavy lifting while you sleep. Our <strong>Dave Ramsey investment calculator</strong> shows you exactly how this math works for your specific situation.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Breaking Free from Million Dollar Debt Cycles
+                The Crypto Crash Proved Dave Right
               </h3>
 
               <p>
-                Dave Ramsey often discusses how Americans accumulate <strong>dave ramsey million dollar debt</strong> through poor financial decisions – car loans, credit cards, and lifestyle inflation. Our calculator helps you flip this script by showing how the same mathematical principles that create debt can create wealth when applied correctly.
+                Remember when everyone was asking Dave Ramsey about crypto? He kept saying stick to boring mutual funds, and people thought he was old school. Then 2022 happened. Bitcoin crashed, people lost their life savings, but guess what? The folks using our <strong>Dave Ramsey investment calculator</strong> and buying mutual funds every month? They kept building wealth.
               </p>
 
               <p>
-                When you search for a <strong>google dave ramsey investment calculator</strong>, you're taking the first step toward financial freedom. But finding your investment number is just the beginning. The real magic happens when you automate that monthly investment and let compound interest work for decades. This is the foundation of <strong>dave ramsey building wealth</strong> strategies that have helped millions achieve financial peace.
+                That's the magic of knowing your investment number. When the market tanks, you don't panic and sell. You keep hitting your monthly target because you're buying more shares for the same money. When the market goes crazy high, you don't get greedy and pour in extra cash. You stick to your number. Boring? Maybe. Effective? Absolutely.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Your Investment Number for Retirement Success
+                From Debt Magnet to Wealth Builder
               </h3>
 
               <p>
-                <strong>Dave ramsey retirement</strong> planning centers on one key insight: the earlier you start, the less you need to invest monthly. A 25-year-old who wants $1 million by age 65 needs to invest about $467 monthly. But a 35-year-old with the same goal needs $1,319 monthly – nearly three times as much for waiting just ten years.
+                Here's what Dave Ramsey figured out that most people miss. The same math that buries you in debt can make you rich. Car payments, credit cards, lifestyle inflation – these things compound against you every month. But flip the script and use an <strong>investing calculator</strong> to compound FOR you? Game changer.
               </p>
 
               <p>
-                Our <strong>compound investment calculator dave ramsey</strong> style tool shows you these trade-offs clearly. You can adjust your target amount, timeline, or expected returns to see how each change affects your monthly investment number. This flexibility helps you find a plan that fits your current situation while keeping you on track for your long-term goals.
+                Look, finding your investment number is step one. But the real money gets made when you set up automatic transfers and forget about it. Let the money leave your account before you even see it. That's how regular people build serious wealth using <strong>Dave Ramsey investment</strong> principles. It's not glamorous, but it works.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Taking Action on Your Investment Number
+                Why Starting Late Costs You Big Time
               </h3>
 
               <p>
-                Knowing your investment number is powerful, but acting on it is what creates wealth. Start by setting up automatic transfers from your checking account to your investment accounts. This "pay yourself first" approach ensures you invest before you have a chance to spend the money elsewhere. Many people find it helpful to schedule transfers right after payday, treating their investment number like any other essential bill.
+                Want to see something that'll make your stomach drop? A 25-year-old who wants to retire with $1 million needs to invest $467 monthly. Wait until 35? Now you need $1,319 monthly. That's almost triple for waiting just 10 years. Ouch.
               </p>
 
               <p>
-                Remember, your investment number isn't set in stone. As your income grows or your goals change, you can recalculate and adjust. The important thing is having a clear target and working toward it consistently. Whether your number is $200 or $2,000 per month, the principles remain the same: start now, stay consistent, and let compound interest work its magic over time.
+                This is exactly why you need to run the numbers right now. Our calculator shows you what happens if you start today versus next year versus "when things settle down." Spoiler alert: things never settle down, and every month you wait costs you serious money. Stop planning to plan and just find your number.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                Stop Talking, Start Investing
+              </h3>
+
+              <p>
+                Knowing your number is cool and all, but it won't make you rich. You know what will? Actually investing that money every single month. Set up automatic transfers so the money disappears from your checking account before you can spend it on stuff you don't need. Treat it like a bill you have to pay, because future you is counting on it.
+              </p>
+
+              <p>
+                Your investment number will change as life happens. Get a raise? Recalculate. Want to retire earlier? Run the numbers again. But here's the thing: whether your number is $200 or $2,000 monthly, the game plan stays the same. Start today, automate everything, and let compound interest do the heavy lifting while you live your life.
               </p>
             </div>
           </motion.div>

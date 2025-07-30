@@ -49,16 +49,16 @@ const BabySteps: React.FC = () => {
           >
             <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              Dave Ramsey's Financial Plan
+              Dave Ramsey Investment Method
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              The 7 Baby Steps to Financial Peace
+              Dave Ramsey Baby Steps
               <span className="block text-2xl sm:text-3xl text-indigo-600 mt-2">
-                The Proven Plan That's Helped Millions
+                7 Steps to Build Wealth Using His Investment Calculator
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Dave Ramsey's Baby Steps aren't just a plan – they're a roadmap to financial freedom that's been tested by millions of people. Each step builds on the last, creating unstoppable momentum toward wealth.
+              Want to know why Dave Ramsey's investment approach works? It's not just about the calculator or the 12% returns. It's about following these 7 baby steps in order. Skip steps, and you'll struggle. Follow them exactly, and you'll build serious wealth.
             </p>
           </motion.div>
 
@@ -149,23 +149,23 @@ const BabySteps: React.FC = () => {
                   <span className="text-white font-bold text-2xl">4</span>
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Invest 15% of Income in Retirement</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Invest 15% Using Dave Ramsey Calculator Method</h2>
                   <p className="text-gray-700 mb-4 leading-relaxed">
-                    This is where wealth building begins! Invest 15% of your household income in retirement accounts. Start with employer 401(k) match, then Roth IRAs, then back to 401(k). Focus on growth stock mutual funds with good track records.
+                    This is where real wealth building starts! You need to invest exactly 15% of your household income for retirement. But here's what most people miss: you need to know your exact monthly amount. Use our <strong>Dave Ramsey investment calculator</strong> to find your number, then automate it.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-blue-50 rounded-lg p-4">
-                      <h3 className="font-semibold text-gray-900 mb-2">Investment Priority:</h3>
+                      <h3 className="font-semibold text-gray-900 mb-2">Investment Priority Order:</h3>
                       <ol className="text-sm text-gray-700 space-y-1">
-                        <li>1. 401(k) match (free money)</li>
-                        <li>2. Roth IRA (tax-free growth)</li>
-                        <li>3. Traditional 401(k) (tax deduction)</li>
+                        <li>1. Get full 401(k) match (free money)</li>
+                        <li>2. Max out Roth IRA ($6,500/year)</li>
+                        <li>3. Back to 401(k) until you hit 15%</li>
                       </ol>
                     </div>
                     <div className="bg-indigo-50 rounded-lg p-4">
-                      <h3 className="font-semibold text-gray-900 mb-2">Dave's Recommendation:</h3>
+                      <h3 className="font-semibold text-gray-900 mb-2">Calculator Shows Your Numbers:</h3>
                       <p className="text-sm text-gray-700">
-                        Growth stock mutual funds with 10+ year track records. Spread across large cap, mid cap, small cap, and international.
+                        Making $60k? That's $750 monthly. Our <strong>investing calculator</strong> breaks this down by account type so you know exactly where each dollar goes.
                       </p>
                     </div>
                   </div>
@@ -329,15 +329,15 @@ const BabySteps: React.FC = () => {
               <div className="w-12 h-12 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
                 <Calculator className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Ready for Baby Step 4?</h3>
+              <h3 className="text-2xl font-bold mb-4">Use the Dave Ramsey Investment Calculator</h3>
               <p className="text-indigo-100 mb-6">
-                Calculate exactly how much you need to invest monthly to reach your retirement goals using the 15% rule.
+                Ready for Baby Step 4? Find your exact monthly investment amount using Dave Ramsey's proven method. Just enter your income and see your 15% number.
               </p>
               <button 
                 onClick={() => navigate('/tool')}
                 className="inline-flex items-center px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-200"
               >
-                Calculate My Investment Number
+                Start Investment Calculator
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
             </div>
@@ -346,15 +346,15 @@ const BabySteps: React.FC = () => {
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
                 <BookOpen className="w-6 h-6 text-green-600" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Learn About Dave's 12% Rule</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Dave Ramsey 12% Investment Rule</h3>
               <p className="text-gray-600 mb-6">
-                Understand why Dave recommends expecting 12% returns and how this fits into your long-term investment strategy.
+                Why does Dave Ramsey use 12% returns in his investment calculator? Learn the data behind this number and how it affects your wealth building plan.
               </p>
               <button 
                 onClick={() => navigate('/dave-ramsey/12-percent-rule')}
                 className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transform hover:scale-105 transition-all duration-200"
               >
-                Learn the 12% Rule
+                Dave Ramsey 12% Rule Explained
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
             </div>
